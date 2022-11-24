@@ -42,6 +42,20 @@ export default {
         return data;
       }, errorHandler);
   },
+  post: function post(
+    http: AxiosInstance,
+    url: string,
+    config?: AxiosRequestConfig,
+  ) {
+    return http
+      .post(url, {
+        ...config,
+      })
+      .then((response) => {
+        const { data } = response;
+        return data;
+      }, errorHandler);
+  },
   getAllByPage: async function getAllByPage(
     http: AxiosInstance,
     url: string,

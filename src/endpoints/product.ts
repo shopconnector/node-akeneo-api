@@ -33,6 +33,23 @@ export const getOne = (
     params: query,
   });
 
+export const post = (
+  http: AxiosInstance,
+  {
+    code,
+    query,
+  }: {
+    code: string;
+    query?: {
+      with_attribute_options?: boolean;
+      with_quality_scores?: boolean;
+    };
+  },
+): Promise<Product> =>
+  raw.post(http, `/api/rest/v1/products`, {
+    params: query,
+  });
+
 export const getAll = (
   http: AxiosInstance,
   { query = {} }: { query?: ProductQueryParameters },
