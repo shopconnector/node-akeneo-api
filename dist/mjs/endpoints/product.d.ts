@@ -16,9 +16,7 @@ export declare const getOne: (http: AxiosInstance, { code, query, }: {
         with_quality_scores?: boolean | undefined;
     } | undefined;
 }) => Promise<Product>;
-export declare const post: (http: AxiosInstance, { product }: {
-    product: Product;
-}) => Promise<Product>;
+export declare const post: (http: AxiosInstance, product: Product) => Promise<Product>;
 export declare const getAll: (http: AxiosInstance, { query }: {
     query?: ProductQueryParameters | undefined;
 }) => Promise<ListResponse<Product>>;
