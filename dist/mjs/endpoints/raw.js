@@ -27,9 +27,9 @@ export default {
         }, errorHandler);
     },
     post: function post(http, url, config) {
-        const body = config.data;
+        console.log(config);
         return http
-            .post(url, body, {
+            .post(url, {
             ...config
         })
             .then((response) => {
