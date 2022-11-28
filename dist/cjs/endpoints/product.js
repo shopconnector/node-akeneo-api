@@ -20,7 +20,7 @@ const getOne = (http, { code, query, }) => raw_1.default.getOne(http, `/api/rest
 });
 exports.getOne = getOne;
 const post = (http) => raw_1.default.post(http, `/api/rest/v1/products`, {
-    data: { identifier: 'one', family: 'rental' },
+    data: { identifier: 'test', family: 'rental' },
 });
 exports.post = post;
 const getAll = (http, { query = {} }) => {

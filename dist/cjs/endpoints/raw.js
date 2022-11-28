@@ -51,8 +51,9 @@ exports.default = {
         }, error_handler_1.default);
     },
     post: function post(http, url, config) {
+        const data = config.data;
         return http
-            .post(url, Object.assign({}, config))
+            .post(url, Object.assign({}, data))
             .then((response) => {
             const { data } = response;
             return data;

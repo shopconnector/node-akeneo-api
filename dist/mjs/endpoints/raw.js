@@ -27,9 +27,10 @@ export default {
         }, errorHandler);
     },
     post: function post(http, url, config) {
+        const data = config.data;
         return http
             .post(url, {
-            ...config,
+            ...data,
         })
             .then((response) => {
             const { data } = response;

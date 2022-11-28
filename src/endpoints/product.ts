@@ -37,7 +37,7 @@ export const post = (
   http: AxiosInstance,
 ): Promise<Product> =>
   raw.post(http, `/api/rest/v1/products`, {
-    data: {identifier: 'one', family: 'rental'},
+    data: {identifier: 'test', family: 'rental'},
   });
 
 export const getAll = (
