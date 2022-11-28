@@ -62,9 +62,7 @@ export declare const createClient: (params: ClientParams) => {
         getAll: (params: {
             query?: import("./types").ProductQueryParameters | undefined;
         }) => Promise<import("./types").ListResponse<import("./types").Product>>;
-        post: (params: {
-            query?: import("./types").Product | undefined;
-        }) => Promise<import("./types").Product>;
+        post: (params: Record<string, any>) => Promise<import("./types").Product>;
     };
     assetFamily: {
         getOne: (params: {

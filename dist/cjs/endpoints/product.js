@@ -19,8 +19,8 @@ const getOne = (http, { code, query, }) => raw_1.default.getOne(http, `/api/rest
     params: query,
 });
 exports.getOne = getOne;
-const post = (http, { query, }) => raw_1.default.post(http, `/api/rest/v1/products`, {
-    data: query,
+const post = (http) => raw_1.default.post(http, `/api/rest/v1/products`, {
+    data: { identifier: 'one', family: 'rental' },
 });
 exports.post = post;
 const getAll = (http, { query = {} }) => {

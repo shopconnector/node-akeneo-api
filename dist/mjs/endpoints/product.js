@@ -11,8 +11,8 @@ export const get = (http, { query }) => raw.get(http, `/api/rest/v1/products`, {
 export const getOne = (http, { code, query, }) => raw.getOne(http, `/api/rest/v1/products/${code}`, {
     params: query,
 });
-export const post = (http, { query, }) => raw.post(http, `/api/rest/v1/products`, {
-    data: query,
+export const post = (http) => raw.post(http, `/api/rest/v1/products`, {
+    data: { identifier: 'one', family: 'rental' },
 });
 export const getAll = (http, { query = {} }) => {
     // support legacy pagination_type "page"

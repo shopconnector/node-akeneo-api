@@ -35,14 +35,9 @@ export const getOne = (
 
 export const post = (
   http: AxiosInstance,
-  {
-    query,
-  }: {
-    query?: Product
-  },
 ): Promise<Product> =>
   raw.post(http, `/api/rest/v1/products`, {
-    data: query,
+    data: {identifier: 'one', family: 'rental'},
   });
 
 export const getAll = (
