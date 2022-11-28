@@ -63,7 +63,7 @@ export declare const createClient: (params: ClientParams) => {
             query?: import("./types").ProductQueryParameters | undefined;
         }) => Promise<import("./types").ListResponse<import("./types").Product>>;
         post: (params: {
-            product?: import("./types").Product | undefined;
+            query?: import("./types").Product | undefined;
         }) => Promise<import("./types").Product>;
     };
     assetFamily: {
