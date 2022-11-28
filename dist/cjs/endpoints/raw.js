@@ -50,9 +50,9 @@ exports.default = {
             return data;
         }, error_handler_1.default);
     },
-    post: function post(http, url, body) {
+    post: function post(http, url, config) {
         return http
-            .post(url, body)
+            .post(url, Object.assign({}, config))
             .then((response) => {
             const { data } = response;
             return data;

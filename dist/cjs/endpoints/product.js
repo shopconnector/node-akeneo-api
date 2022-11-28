@@ -19,7 +19,9 @@ const getOne = (http, { code, query, }) => raw_1.default.getOne(http, `/api/rest
     params: query,
 });
 exports.getOne = getOne;
-const post = (http, { product }) => raw_1.default.post(http, `/api/rest/v1/products`, product);
+const post = (http, { product }) => raw_1.default.post(http, `/api/rest/v1/products`, {
+    data: product
+});
 exports.post = post;
 const getAll = (http, { query = {} }) => {
     // support legacy pagination_type "page"
