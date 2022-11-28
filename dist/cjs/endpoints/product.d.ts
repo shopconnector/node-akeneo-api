@@ -16,8 +16,7 @@ export declare const getOne: (http: AxiosInstance, { code, query, }: {
         with_quality_scores?: boolean | undefined;
     } | undefined;
 }) => Promise<Product>;
-export declare const post: (http: AxiosInstance, { code, query, }: {
-    code: string;
+export declare const post: (http: AxiosInstance, { query, }: {
     query?: {
         with_attribute_options?: boolean | undefined;
         with_quality_scores?: boolean | undefined;

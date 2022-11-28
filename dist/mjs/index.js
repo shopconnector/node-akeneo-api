@@ -42,6 +42,7 @@ export const createClient = (params) => {
             getOne: wrap(http, endpoints.product.getOne),
             get: wrap(http, endpoints.product.get),
             getAll: wrap(http, endpoints.product.getAll),
+            post: wrap(http, endpoints.product.post),
         },
         assetFamily: {
             getOne: wrap(http, endpoints.assetFamily.getOne),

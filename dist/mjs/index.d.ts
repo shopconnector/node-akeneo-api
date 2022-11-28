@@ -62,6 +62,12 @@ export declare const createClient: (params: ClientParams) => {
         getAll: (params: {
             query?: import("./types").ProductQueryParameters | undefined;
         }) => Promise<import("./types").ListResponse<import("./types").Product>>;
+        post: (params: {
+            query?: {
+                with_attribute_options?: boolean | undefined;
+                with_quality_scores?: boolean | undefined;
+            } | undefined;
+        }) => Promise<import("./types").Product>;
     };
     assetFamily: {
         getOne: (params: {
