@@ -47,10 +47,9 @@ export default {
     url: string,
     config?: AxiosRequestConfig,
   ) {
-    console.log(config)
     return http
       .post(url, {
-        ...config,
+        config,
       })
       .then((response) => {
         const { data } = response;
