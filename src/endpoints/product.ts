@@ -36,16 +36,13 @@ export const getOne = (
 export const post = (
   http: AxiosInstance,
   {
-    query,
+    product
   }: {
-    query?: {
-      with_attribute_options?: boolean;
-      with_quality_scores?: boolean;
-    };
+    product?: Product
   },
 ): Promise<Product> =>
   raw.post(http, `/api/rest/v1/products`, {
-    params: query,
+    params: product,
   });
 
 export const getAll = (
