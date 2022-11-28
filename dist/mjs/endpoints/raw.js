@@ -28,7 +28,7 @@ export default {
     },
     post: function post(http, url, config) {
         return http
-            .post(url, {
+            .post(url, {}, {
             ...config
         })
             .then((response) => {

@@ -48,7 +48,7 @@ export default {
     config?: AxiosRequestConfig,
   ) {
     return http
-      .post(url, {
+      .post(url, {}, {
          ...config
       })
       .then((response) => {
