@@ -20,7 +20,7 @@ const getOne = (http, { code, query, }) => raw_1.default.getOne(http, `/api/rest
 });
 exports.getOne = getOne;
 const post = (http, { query, }) => raw_1.default.post(http, `/api/rest/v1/products`, {
-    data: query,
+    params: query,
 });
 exports.post = post;
 const getAll = (http, { query = {} }) => {

@@ -12,7 +12,7 @@ export const getOne = (http, { code, query, }) => raw.getOne(http, `/api/rest/v1
     params: query,
 });
 export const post = (http, { query, }) => raw.post(http, `/api/rest/v1/products`, {
-    data: query,
+    params: query,
 });
 export const getAll = (http, { query = {} }) => {
     // support legacy pagination_type "page"

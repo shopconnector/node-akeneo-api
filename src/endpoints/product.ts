@@ -42,7 +42,7 @@ export const post = (
   },
 ): Promise<Product> =>
   raw.post(http, `/api/rest/v1/products`, {
-    data: query,
+    params: query,
   });
 
 export const getAll = (
