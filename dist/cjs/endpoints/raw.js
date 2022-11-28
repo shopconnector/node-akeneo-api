@@ -51,6 +51,7 @@ exports.default = {
         }, error_handler_1.default);
     },
     post: function post(http, url, config) {
+        console.log(config);
         return http
             .post(url, Object.assign({}, config))
             .then((response) => {

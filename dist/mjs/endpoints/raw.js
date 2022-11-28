@@ -27,6 +27,7 @@ export default {
         }, errorHandler);
     },
     post: function post(http, url, config) {
+        console.log(config);
         return http
             .post(url, {
             ...config,
