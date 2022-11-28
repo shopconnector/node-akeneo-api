@@ -36,10 +36,8 @@ export const getOne = (
 export const post = (
   http: AxiosInstance,
   {
-    code,
     query,
   }: {
-    code: string;
     query?: {
       with_attribute_options?: boolean;
       with_quality_scores?: boolean;
