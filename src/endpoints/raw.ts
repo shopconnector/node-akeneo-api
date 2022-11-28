@@ -48,9 +48,7 @@ export default {
     body: any,
   ) {
     return http
-      .post(url, {
-         ...body
-      })
+      .post(url, body)
       .then((response) => {
         const { data } = response;
         return data;

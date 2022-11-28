@@ -37,9 +37,7 @@ export const post = (
   http: AxiosInstance,
   product: Product
 ): Promise<Product> =>
-  raw.post(http, `/api/rest/v1/products`, {
-    data: product
-  });
+  raw.post(http, `/api/rest/v1/products`, product);
 
 export const getAll = (
   http: AxiosInstance,

@@ -52,7 +52,7 @@ exports.default = {
     },
     post: function post(http, url, body) {
         return http
-            .post(url, Object.assign({}, body))
+            .post(url, body)
             .then((response) => {
             const { data } = response;
             return data;
