@@ -26,12 +26,9 @@ export default {
             return data;
         }, errorHandler);
     },
-    post: function post(http, url, config) {
-        const data = config.data;
+    post: function post(http, url, body) {
         return http
-            .post(url, {
-            ...data,
-        })
+            .post(url, body)
             .then((response) => {
             const { data } = response;
             return data;
