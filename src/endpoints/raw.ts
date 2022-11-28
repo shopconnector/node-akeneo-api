@@ -45,12 +45,11 @@ export default {
   post: function post(
     http: AxiosInstance,
     url: string,
-    config: AxiosRequestConfig,
+    body: any,
   ) {
-    const data = config.data
     return http
       .post(url, {
-         ...data
+         ...body
       })
       .then((response) => {
         const { data } = response;
